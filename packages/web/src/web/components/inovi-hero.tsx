@@ -16,7 +16,7 @@ export function InoviHero() {
         <div className="inovi-copy">
           <h1>Precisão em cada detalhe.<br /><span>Naturalidade em cada sorriso.</span></h1>
           <p className="inovi-description">Próteses dentárias que unem estética e função. Uma parceria com dentistas para cuidar do que faz cada sorriso único.</p>
-          <a className="inovi-contact" href={contact} target="_blank" rel="noopener noreferrer"><FaWhatsapp size={21} /><span>Fale com o laboratório</span><ArrowUpRight size={19} /></a>
+          <a className="inovi-contact" href={contact} target="_blank" rel="noopener noreferrer"><FaWhatsapp size={21} /><span>Solicite seu orçamento</span><ArrowUpRight size={19} /></a>
           <p className="inovi-contact-note">Converse com nossa equipe pelo WhatsApp</p>
         </div>
       </div>

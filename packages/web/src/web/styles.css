@@ -375,3 +375,110 @@ h1{font-size:clamp(64px,7.7vw,116px);font-weight:300;line-height:1.06;letter-spa
  width:58%;height:64%;object-fit:contain;position:relative;z-index:1;
  filter:drop-shadow(0 2px 2px #26323d) drop-shadow(0 0 5px #d5e0eb88);
 }
+
+/* Catalog services: two graphite cards, three categories per card, no prices. */
+.inovi-silver-section{min-height:0;padding-bottom:80px}
+.inovi-services{position:relative;max-width:1080px;margin:0 auto;color:#252a2e;text-align:left}
+.inovi-services-heading{max-width:650px;margin:0 auto 65px;text-align:center}
+.inovi-services-eyebrow{font-size:10px;letter-spacing:3px;color:#76828d}
+.inovi-services-heading h2{font-size:clamp(30px,4vw,44px);font-weight:400;letter-spacing:-1.4px;line-height:1.2;margin:15px 0}
+.inovi-services-heading p{font-size:13px;line-height:1.8;color:#687078;margin:0}
+.inovi-services-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;padding-left:26px}
+.inovi-service-reveal{height:100%}
+.inovi-silver-section .inovi-service-card{height:100%;padding:35px 30px 35px 40px;text-align:left}
+.inovi-service-icon{width:72px;height:72px;left:-26px;top:32px;border-radius:19px}
+.inovi-service-icon:before{border-radius:13px;inset:6px}
+.inovi-service-icon svg{width:38px;height:38px}
+.inovi-service-header{padding-left:30px;min-height:83px}
+.inovi-service-header>span{font-size:8px;letter-spacing:2px;color:#b5c2ce}
+.inovi-service-header h3{font-family:Poppins,sans-serif;font-size:21px;font-weight:400;line-height:1.4;margin:10px 0 25px;letter-spacing:-.4px}
+.inovi-service-header .bio-link-label{font-family:inherit;font-size:inherit;white-space:normal}
+.inovi-service-categories{display:flex;flex-direction:column;gap:25px}
+.inovi-service-category{padding-top:24px;border-top:1px solid #e2edf024}
+.inovi-service-category h4{font-size:16px;line-height:1.5;font-weight:500;color:#f2f5f7;margin:0 0 13px}
+.inovi-service-category ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+.inovi-service-category li{position:relative;padding-left:15px;font-size:12px;line-height:1.65;color:#d2d8de}
+.inovi-service-category li:before{content:"";position:absolute;left:0;top:.7em;width:4px;height:4px;background:#bdcad5;border-radius:50%}
+.inovi-service-cta{display:inline-flex;align-items:center;gap:10px;min-height:44px;margin-top:19px;padding:11px 15px;border-radius:8px;border:1px solid #d5dfe8;background:linear-gradient(120deg,#e9eef2,#c4ced7);color:#25323c;font-size:11px;font-weight:500;line-height:1.5;box-shadow:inset 0 1px 1px #ffffffaa,0 4px 14px #0c182422;transition:transform .2s,box-shadow .2s,background .2s}
+.inovi-service-cta>svg{flex-shrink:0}
+.inovi-service-cta:hover{transform:translateY(-2px);background:linear-gradient(120deg,#fff,#d4dfe8);box-shadow:0 5px 20px #bccfdf33}
+.inovi-service-cta:focus-visible{outline:2px solid #eaf3fa;outline-offset:5px}
+.inovi-service-cta:active{transform:translateY(0)}
+@media(max-width:767px){.inovi-service-cta{width:100%;justify-content:center;font-size:10px;padding:11px 9px;gap:8px}}
+.inovi-contact-area{margin-top:110px;scroll-margin-top:40px}
+@media(max-width:767px){
+ .inovi-silver-section{padding-bottom:48px}
+ .inovi-services-heading{margin-bottom:45px;padding:0 8px}
+ .inovi-services-heading h2{font-size:30px}
+ .inovi-services-heading p{font-size:12px}
+ .inovi-services-grid{grid-template-columns:1fr;gap:28px;padding-left:22px}
+ .inovi-silver-section .inovi-service-card{padding:28px 22px 30px 28px;border-radius:21px}
+ .inovi-service-icon{width:62px;height:62px;left:-22px;top:27px;border-radius:16px}
+ .inovi-service-icon:before{border-radius:11px}
+ .inovi-service-icon svg{width:32px;height:32px}
+ .inovi-service-header{padding-left:29px;min-height:78px}
+ .inovi-service-header h3{font-size:18px;margin-bottom:22px}
+ .inovi-service-category h4{font-size:15px}
+ .inovi-contact-area{margin-top:76px}
+}
+
+/* Persistent contact, revealed only after the opening section. */
+.inovi-floating-whatsapp{
+ right:max(26px,env(safe-area-inset-right));
+ bottom:calc(26px + env(safe-area-inset-bottom));
+ background:radial-gradient(ellipse at 85% 0%,#d5dfe988,transparent 50%),linear-gradient(135deg,#56636e,#222b33 58%,#75838f);
+ border:1px solid #c4cdd5;
+ box-shadow:inset 2px 2px 5px #ffffff55,inset -2px -2px 4px #c5d0da33,0 6px 25px #29394333;
+}
+.inovi-floating-whatsapp svg{color:#f2f5f7;filter:drop-shadow(0 2px 2px #26323d)}
+.inovi-floating-whatsapp::before,.inovi-floating-whatsapp::after{border-color:#8597a6aa}
+.inovi-floating-whatsapp:hover{box-shadow:inset 2px 2px 5px #ffffff66,0 6px 30px #5f758a66}
+.inovi-floating-whatsapp:focus-visible{outline:2px solid #334958;outline-offset:6px;animation-play-state:paused}
+@media(max-width:767px){.inovi-floating-whatsapp{width:56px;height:56px;right:20px;bottom:calc(20px + env(safe-area-inset-bottom))}.inovi-floating-whatsapp svg{width:32px;height:32px}}
+
+/* Reversible, scroll-bound prosthesis transformation; untouched opening hero. */
+.inovi-dental-scroll{position:relative;height:240svh;background:#fff;color:#252a2e;--dental-progress:0}
+.inovi-dental-stage{position:sticky;top:0;height:100svh;min-height:540px;overflow:hidden;background:#fff;isolation:isolate}
+.inovi-dental-branding{position:absolute;left:6%;right:6%;top:32px;display:flex;align-items:center;justify-content:space-between;z-index:2}
+.inovi-dental-branding img{width:155px;height:auto;display:block}
+.inovi-dental-branding>span{font-size:9px;letter-spacing:2.5px;color:#89939b}
+.inovi-dental-copy{position:absolute;top:17%;left:24px;right:24px;text-align:center;z-index:2}
+.inovi-dental-copy>p:first-child{font-size:9px;letter-spacing:3px;color:#86919a;margin:0 0 16px}
+.inovi-dental-copy h2{font-family:Poppins,sans-serif;font-size:clamp(32px,4.3vw,62px);font-weight:300;letter-spacing:-2px;line-height:1.18;margin:0}
+.inovi-dental-copy h2 span{color:#6d7a85}
+.inovi-dental-description{font-size:12px;color:#7c858c;margin:18px 0 0;line-height:1.7}
+.inovi-dental-visual{position:absolute;left:50%;top:36%;translate:-50% 0;width:min(1180px,100%);height:53%;}
+.inovi-dental-visual picture,.inovi-dental-visual img,.inovi-dental-visual canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+.inovi-dental-visual canvas{opacity:0;transition:opacity .25s}
+.inovi-dental-visual canvas.is-ready{opacity:1}
+.inovi-dental-bottom{position:absolute;left:6%;right:6%;bottom:36px;display:flex;align-items:center;justify-content:space-between;gap:30px;color:#8a949c}
+.inovi-dental-scroll-hint{display:flex;align-items:center;gap:12px;font-size:10px;white-space:nowrap}
+.inovi-dental-scroll-hint svg{animation:inovi-scroll-nudge 2s ease-in-out infinite}
+.inovi-dental-progress{width:140px;height:2px;background:#e8edf0;overflow:hidden}
+.inovi-dental-progress i{display:block;width:100%;height:100%;background:#6e818f;transform-origin:left;transform:scaleX(var(--dental-progress))}
+.inovi-dental-signature{font-size:8px;letter-spacing:1.7px}
+@keyframes inovi-scroll-nudge{0%,100%{transform:translateY(-3px)}50%{transform:translateY(3px)}}
+@media(max-width:767px){
+ .inovi-dental-scroll{height:220svh}
+ .inovi-dental-stage{min-height:520px}
+ .inovi-dental-branding{left:25px;right:25px;top:25px}
+ .inovi-dental-branding img{width:120px}
+ .inovi-dental-branding>span{font-size:7px;letter-spacing:1.3px}
+ .inovi-dental-copy{top:21%;left:22px;right:22px}
+ .inovi-dental-copy>p:first-child{font-size:7px;letter-spacing:2px;margin-bottom:14px}
+ .inovi-dental-copy h2{font-size:clamp(29px,8vw,38px);letter-spacing:-1.2px;line-height:1.25}
+ .inovi-dental-copy h2 span{display:block}
+ .inovi-dental-description{font-size:10px;margin-top:16px}
+ .inovi-dental-visual{top:40%;height:41%;width:100%}
+ .inovi-dental-bottom{left:25px;right:96px;bottom:40px;gap:15px}
+ .inovi-dental-scroll-hint{font-size:8px;gap:7px}
+ .inovi-dental-progress{width:65px;flex-shrink:0}
+ .inovi-dental-signature{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+ .inovi-dental-scroll{height:auto}
+ .inovi-dental-stage{position:relative}
+ .inovi-dental-scroll-hint{visibility:hidden}
+ .inovi-dental-scroll-hint svg{animation:none}
+ .inovi-dental-progress{display:none}
+}

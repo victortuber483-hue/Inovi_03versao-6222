@@ -10,8 +10,8 @@
       "edgeToEdgeEnabled": true
     },
     "extra": {
-      "apiUrl": "https://inovi-f80wyha-preview-4200.runable.site/",
-      "applicationId": "inovi-f80wyha",
+      "apiUrl": "https://inovi-xmdveye-preview-4200.runable.site/",
+      "applicationId": "inovi-xmdveye",
       "runableAuthIssuer": "https://api.runable.com/api/auth"
     },
     "ios": {
@@ -26,7 +26,7 @@
     "name": "mobile",
     "slug": "mobile",
     "version": "1.0.0",
-    "scheme": "runable-inovi-f80wyha",
+    "scheme": "runable-inovi-xmdveye",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
